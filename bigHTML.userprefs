@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{49A9202A-E7F5-451D-AE11-1A1D90553C73}|Default">
+  <MonoDevelop.Ide.ItemProperties.bigHTML PreferredExecutionTarget="Test1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="bigHTML/ViewController.cs">
+    <Files>
+      <File FileName="bigHTML/AppDelegate.cs" Line="26" Column="6" />
+      <File FileName="bigHTML/ViewController.cs" Line="350" Column="124" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

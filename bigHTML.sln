@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bigHTML", "bigHTML\bigHTML.csproj", "{49A9202A-E7F5-451D-AE11-1A1D90553C73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49A9202A-E7F5-451D-AE11-1A1D90553C73}.Debug|x86.ActiveCfg = Debug|x86
+		{49A9202A-E7F5-451D-AE11-1A1D90553C73}.Debug|x86.Build.0 = Debug|x86
+		{49A9202A-E7F5-451D-AE11-1A1D90553C73}.Release|x86.ActiveCfg = Release|x86
+		{49A9202A-E7F5-451D-AE11-1A1D90553C73}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

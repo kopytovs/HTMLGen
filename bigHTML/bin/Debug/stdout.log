@@ -1,0 +1,365 @@
+:Classificator
+:Data
+:Error
+:Factor
+:Library
+:MachineLearning
+:Model
+:Object
+:Program
+:ProgramLanguage
+:Resource
+:Result
+:Science
+:Stage
+:Task
+:Tools
+:Utility
+class:Classificator rdf:type owl:Class
+
+class:Data rdf:type owl:Class
+
+class:Error rdf:type owl:Class
+
+class:Factor rdf:type owl:Class
+
+class:Library rdf:type owl:Class
+
+class:Library rdfs:subClassOf class:Tools
+
+class:MachineLearning rdf:type owl:Class
+
+class:MachineLearning rdfs:subClassOf class:Science
+
+class:Model rdf:type owl:Class
+
+class:Model rdfs:subClassOf class:Tools
+
+class:Object rdf:type owl:Class
+
+class:Program rdf:type owl:Class
+
+class:ProgramLanguage rdf:type owl:Class
+
+class:ProgramLanguage rdfs:subClassOf class:Tools
+
+class:Resource rdf:type owl:Class
+
+class:Resource rdfs:subClassOf class:Tools
+
+class:Result rdf:type owl:Class
+
+class:Science rdf:type owl:Class
+
+class:Stage rdf:type owl:Class
+
+class:Task rdf:type owl:Class
+
+class:Tools rdf:type owl:Class
+
+class:Utility rdf:type owl:Class
+
+class:Utility rdfs:subClassOf class:Tools
+
+res:addMLtoApp rdf:type owl:NamedIndividual
+
+res:addMLtoApp rdf:type class:Stage
+
+res:ageRecognition rdf:type owl:NamedIndividual
+
+res:ageRecognition rdf:type class:Task
+
+res:ageRecognition prop:for res:goodResult
+
+res:ageRecognitionError rdf:type owl:NamedIndividual
+
+res:ageRecognitionError rdf:type class:Error
+
+res:algorithm rdf:type owl:NamedIndividual
+
+res:algorithm rdf:type class:Program
+
+res:algorithm prop:contains res:addMLtoApp
+
+res:algorithm prop:contains res:dataPreparing
+
+res:algorithm prop:contains res:dataSearching
+
+res:algorithm prop:contains res:modelSelecting
+
+res:algorithm prop:contains res:pythonToCoreML
+
+res:algorithm prop:contains res:training
+
+res:algorithm prop:contains res:writeMobileApp
+
+res:awesomeCoreML rdf:type owl:NamedIndividual
+
+res:awesomeCoreML rdf:type class:Resource
+
+res:awesomeSwift rdf:type owl:NamedIndividual
+
+res:awesomeSwift rdf:type class:Resource
+
+res:badResult rdf:type owl:NamedIndividual
+
+res:badResult rdf:type class:Result
+
+res:caffe rdf:type owl:NamedIndividual
+
+res:caffe rdf:type class:Library
+
+res:caffe prop:uses res:decisionTree
+
+res:caffe prop:uses res:faceDetection
+
+res:classification rdf:type owl:NamedIndividual
+
+res:classification rdf:type class:MachineLearning
+
+res:classification prop:contains res:dataPreparing
+
+res:classification prop:contains res:dataSearching
+
+res:classification prop:contains res:modelSelecting
+
+res:classification prop:contains res:training
+
+res:coreML rdf:type owl:NamedIndividual
+
+res:coreML rdf:type class:Utility
+
+res:coreML prop:for res:pythonToCoreML
+
+res:coreML prop:uses res:python
+
+res:dataPreparing rdf:type owl:NamedIndividual
+
+res:dataPreparing rdf:type class:Stage
+
+res:dataPreparing prop:for res:classification
+
+res:dataSearching rdf:type owl:NamedIndividual
+
+res:dataSearching rdf:type class:Stage
+
+res:dataSearching prop:for res:classification
+
+res:dataSearching prop:for res:testData
+
+res:dataSearching prop:for res:trainingData
+
+res:decisionTree rdf:type owl:NamedIndividual
+
+res:decisionTree rdf:type class:Classificator
+
+res:emotionRecognition rdf:type owl:NamedIndividual
+
+res:emotionRecognition rdf:type class:Task
+
+res:emotionRecognition prop:for res:goodResult
+
+res:emotionRecognitionError rdf:type owl:NamedIndividual
+
+res:emotionRecognitionError rdf:type class:Error
+
+res:face rdf:type owl:NamedIndividual
+
+res:face rdf:type class:Data
+
+res:faceDetection rdf:type owl:NamedIndividual
+
+res:faceDetection rdf:type class:Model
+
+res:genderRecognition rdf:type owl:NamedIndividual
+
+res:genderRecognition rdf:type class:Task
+
+res:genderRecognition prop:for res:goodResult
+
+res:genderRecognitionError rdf:type owl:NamedIndividual
+
+res:genderRecognitionError rdf:type class:Error
+
+res:goodResult rdf:type owl:NamedIndividual
+
+res:goodResult rdf:type class:Result
+
+res:human rdf:type owl:NamedIndividual
+
+res:human rdf:type class:Object
+
+res:human prop:contains res:face
+
+res:human prop:contains res:humanData
+
+res:human prop:for res:dataPreparing
+
+res:human prop:for res:dataSearching
+
+res:human prop:for res:modelSelecting
+
+res:humanData rdf:type owl:NamedIndividual
+
+res:humanData rdf:type class:Data
+
+res:libSVM rdf:type owl:NamedIndividual
+
+res:libSVM rdf:type class:Library
+
+res:libSVM prop:uses res:svm
+
+res:light rdf:type owl:NamedIndividual
+
+res:light rdf:type class:Factor
+
+res:light prop:causes res:ageRecognitionError
+
+res:light prop:causes res:emotionRecognitionError
+
+res:light prop:causes res:genderRecognitionError
+
+res:logisticalRegression rdf:type owl:NamedIndividual
+
+res:logisticalRegression rdf:type class:Classificator
+
+res:modelSelecting rdf:type owl:NamedIndividual
+
+res:modelSelecting rdf:type class:Stage
+
+res:modelSelecting prop:for res:classification
+
+res:objectiveC rdf:type owl:NamedIndividual
+
+res:objectiveC rdf:type class:ProgramLanguage
+
+res:python rdf:type owl:NamedIndividual
+
+res:python rdf:type class:ProgramLanguage
+
+res:python prop:for res:training
+
+res:python prop:uses res:caffe
+
+res:python prop:uses res:libSVM
+
+res:python prop:uses res:scklearn
+
+res:python prop:uses res:torch7
+
+res:python prop:version :"3.6^^http://www.w3.org/2001/XMLSchema#string"
+
+res:pythonToCoreML rdf:type owl:NamedIndividual
+
+res:pythonToCoreML rdf:type class:Stage
+
+res:qualityOfCompression rdf:type owl:NamedIndividual
+
+res:qualityOfCompression rdf:type class:Factor
+
+res:qualityOfCompression prop:causes res:ageRecognitionError
+
+res:qualityOfCompression prop:causes res:emotionRecognitionError
+
+res:qualityOfCompression prop:causes res:genderRecognitionError
+
+res:qualityOfPhoto rdf:type owl:NamedIndividual
+
+res:qualityOfPhoto rdf:type class:Factor
+
+res:qualityOfPhoto prop:causes res:ageRecognitionError
+
+res:qualityOfPhoto prop:causes res:emotionRecognitionError
+
+res:qualityOfPhoto prop:causes res:genderRecognitionError
+
+res:randomTreeForest rdf:type owl:NamedIndividual
+
+res:randomTreeForest rdf:type class:Classificator
+
+res:randomTreeForest prop:for res:classification
+
+res:realData rdf:type owl:NamedIndividual
+
+res:realData rdf:type class:Data
+
+res:scklearn rdf:type owl:NamedIndividual
+
+res:scklearn rdf:type class:Library
+
+res:scklearn prop:uses res:logisticalRegression
+
+res:svm rdf:type owl:NamedIndividual
+
+res:svm rdf:type class:Classificator
+
+res:swift rdf:type owl:NamedIndividual
+
+res:swift rdf:type class:ProgramLanguage
+
+res:tensorFlowModels rdf:type owl:NamedIndividual
+
+res:tensorFlowModels rdf:type class:Model
+
+res:testData rdf:type owl:NamedIndividual
+
+res:testData rdf:type class:Data
+
+res:testData prop:for res:training
+
+res:torch7 rdf:type owl:NamedIndividual
+
+res:torch7 rdf:type class:Library
+
+res:torch7 prop:uses res:randomTreeForest
+
+res:training rdf:type owl:NamedIndividual
+
+res:training rdf:type class:Stage
+
+res:training prop:for res:goodResult
+
+res:training prop:for res:randomTreeForest
+
+res:trainingData rdf:type owl:NamedIndividual
+
+res:trainingData rdf:type class:Data
+
+res:trainingData prop:for res:training
+
+res:weather rdf:type owl:NamedIndividual
+
+res:weather rdf:type class:Factor
+
+res:weather prop:causes res:ageRecognitionError
+
+res:weather prop:causes res:emotionRecognitionError
+
+res:weather prop:causes res:genderRecognitionError
+
+res:writeMobileApp rdf:type owl:NamedIndividual
+
+res:writeMobileApp rdf:type class:Stage
+
+res:xcode rdf:type owl:NamedIndividual
+
+res:xcode rdf:type class:Utility
+
+res:xcode prop:for res:addMLtoApp
+
+res:xcode prop:for res:writeMobileApp
+
+res:xcode prop:uses res:objectiveC
+
+res:xcode prop:uses res:swift
+
+prop:causes rdf:type owl:ObjectProperty
+
+prop:contains rdf:type owl:ObjectProperty
+
+prop:for rdf:type owl:ObjectProperty
+
+prop:uses rdf:type owl:ObjectProperty
+
+prop:version rdf:type owl:DatatypeProperty
+
